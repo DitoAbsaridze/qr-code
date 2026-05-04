@@ -32,7 +32,7 @@ export default function Login() {
         <input
           className="input"
           type="text"
-          placeholder="Username"
+          placeholder="სახელი"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
@@ -40,7 +40,7 @@ export default function Login() {
         <input
           className="input"
           type="password"
-          placeholder="Password"
+          placeholder="პაროლი"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
