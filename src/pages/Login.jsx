@@ -24,9 +24,9 @@ export default function Login() {
       <form className="card login-card" onSubmit={handleSubmit}>
         <div className="logo-circle">✓</div>
 
-        <h1 className="title">Teacher Attendance</h1>
+        <h1 className="title">მასწავლებლის დასწრება</h1>
         <p className="subtitle">
-          Secure admin panel for managing teacher QR attendance records.
+          უსაფრთხო ადმინისტრაციული პანელი მასწავლებლის QR დასწრების ჩანაწერების სამართავად.
         </p>
 
         <input
@@ -48,7 +48,7 @@ export default function Login() {
         {error && <p className="error">{error}</p>}
 
         <button className="button" style={{ width: "100%", marginTop: 14 }}>
-          Login
+          შესვლა
         </button>
 
         <p className="subtitle" style={{ fontSize: 13 }}>
