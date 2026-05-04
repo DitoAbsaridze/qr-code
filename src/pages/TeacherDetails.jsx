@@ -85,10 +85,10 @@ export default function TeacherDetails() {
     return (
       <div className="page">
         <Link to="/dashboard">
-          <button className="button button-light">Back to dashboard</button>
+          <button className="button button-light">უკან დაფაზე</button>
         </Link>
 
-        <h1>Teacher not found</h1>
+        <h1>მასწავლებელი ვერ მოიძებნა</h1>
       </div>
     );
   }
