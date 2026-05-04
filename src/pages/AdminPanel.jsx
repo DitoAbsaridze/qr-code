@@ -12,8 +12,8 @@ export default function AdminPanel() {
     <div className="page">
       <div className="header">
         <div>
-          <h1 className="title">Admin Panel</h1>
-          <p className="subtitle">Choose what you want to manage.</p>
+          <h1 className="title">ადმინისტრაციული პანელი</h1>
+          <p className="subtitle">აირჩიეთ, რისი მართვა გსურთ.</p>
         </div>
 
         <button className="button button-light" onClick={logout}>
@@ -25,9 +25,9 @@ export default function AdminPanel() {
         <Link to="/qr-codes" className="panel-link">
           <div className="card">
             <div className="big-icon">▦</div>
-            <h2>QR Codes</h2>
+            <h2>QR კოდები</h2>
             <p className="subtitle">
-              View teacher QR codes for check-in and check-out scanning.
+              იხილეთ მასწავლებლის QR კოდები რეგისტრაციისა და გასვლის სკანირებისთვის.
             </p>
           </div>
         </Link>
@@ -35,9 +35,9 @@ export default function AdminPanel() {
         <Link to="/dashboard" className="panel-link">
           <div className="card">
             <div className="big-icon">📊</div>
-            <h2>Dashboard</h2>
+            <h2>დაფა</h2>
             <p className="subtitle">
-              View attendance records by today, week, month, or all time.
+              დასწრების ჩანაწერების ნახვა დღევანდელი, კვირის, თვის ან ყველა დროის მიხედვით.
             </p>
           </div>
         </Link>
