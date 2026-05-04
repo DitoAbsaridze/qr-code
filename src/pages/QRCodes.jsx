@@ -9,14 +9,14 @@ export default function QRCodes() {
     <div className="page">
       <div className="header">
         <div>
-          <h1 className="title">Teacher QR Codes</h1>
+          <h1 className="title">მასწავლებლის QR კოდები</h1>
           <p className="subtitle">
-            Print or display these QR codes. Teachers scan them at the entrance.
+            დაბეჭდეთ ან გამოფინეთ ეს QR კოდები. მასწავლებლები შესასვლელთან სკანირებენ მათ.
           </p>
         </div>
 
         <Link to="/admin">
-          <button className="button button-light">Back to admin</button>
+          <button className="button button-light">დაბრუნება ადმინზე</button>
         </Link>
       </div>
 
