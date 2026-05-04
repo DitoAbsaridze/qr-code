@@ -36,23 +36,23 @@ export default function Dashboard() {
     <div className="page">
       <div className="header">
         <div>
-          <h1 className="title">Dashboard</h1>
-          <p className="subtitle">Choose a teacher to view attendance details.</p>
+          <h1 className="title">დაფა</h1>
+          <p className="subtitle">დასწრების დეტალების სანახავად აირჩიეთ მასწავლებელი.</p>
         </div>
 
         <div className="header-actions">
           <Link to="/admin">
-            <button className="button button-light">Back to admin</button>
+            <button className="button button-light">დაბრუნება ადმინს</button>
           </Link>
 
           <button className="button" onClick={loadScans}>
-            Refresh
+           განაახლეთ
           </button>
         </div>
       </div>
 
       {loading ? (
-        <p>Loading teachers...</p>
+        <p>იტვირთება მასწავლებლები...</p>
       ) : (
         <div className="grid teacher-grid">
           {teachers.map((teacher) => {
@@ -76,14 +76,14 @@ export default function Dashboard() {
 
                   <div className="grid two-grid" style={{ marginTop: 16 }}>
                     <div className="stat">
-                      <div className="stat-label">Today IN</div>
+                      <div className="stat-label">დღეს IN</div>
                       <div className="stat-value">
                         {checkIn ? checkIn.time : "—"}
                       </div>
                     </div>
 
                     <div className="stat">
-                      <div className="stat-label">Today OUT</div>
+                      <div className="stat-label">დღეს OUT</div>
                       <div className="stat-value">
                         {checkOut ? checkOut.time : "—"}
                       </div>
@@ -92,16 +92,16 @@ export default function Dashboard() {
 
                   <div style={{ marginTop: 14 }}>
                     {checkIn && !checkOut && (
-                      <span className="badge badge-in">Currently inside</span>
+                      <span className="badge badge-in">ამჟამად შიგნით</span>
                     )}
 
                     {checkIn && checkOut && (
-                      <span className="badge badge-out">Completed day</span>
+                      <span className="badge badge-out">დაასრულა დღე</span>
                     )}
 
                     {!checkIn && !checkOut && (
                       <span className="badge badge-waiting">
-                        Not scanned today
+                        დღეს არ არის დასკანირებული
                       </span>
                     )}
                   </div>
