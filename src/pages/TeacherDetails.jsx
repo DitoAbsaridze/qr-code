@@ -105,11 +105,11 @@ export default function TeacherDetails() {
 
         <div className="header-actions">
           <Link to="/dashboard">
-            <button className="button button-light">Back to dashboard</button>
+            <button className="button button-light">უკან დაფაზე</button>
           </Link>
 
           <button className="button" onClick={loadScans}>
-            Refresh
+            გადატვირთვა
           </button>
         </div>
       </div>
@@ -119,28 +119,28 @@ export default function TeacherDetails() {
           className={`filter-button ${filter === "today" ? "active" : ""}`}
           onClick={() => setFilter("today")}
         >
-          Today
+          დღეს
         </button>
 
         <button
           className={`filter-button ${filter === "week" ? "active" : ""}`}
           onClick={() => setFilter("week")}
         >
-          Past Week
+          ამ კვირას
         </button>
 
         <button
           className={`filter-button ${filter === "month" ? "active" : ""}`}
           onClick={() => setFilter("month")}
         >
-          This Month
+          ამ თვეში
         </button>
 
         <button
           className={`filter-button ${filter === "all" ? "active" : ""}`}
           onClick={() => setFilter("all")}
         >
-          All
+          ყველა დროის
         </button>
       </div>
 
@@ -150,7 +150,7 @@ export default function TeacherDetails() {
         <p>Loading records...</p>
       ) : filteredScans.length === 0 ? (
         <div className="card">
-          <p>No records for this period.</p>
+          <p>ამ პერიოდისთვის ჩანაწერები არ არის.</p>
         </div>
       ) : (
         <div className="grid">
@@ -178,7 +178,7 @@ export default function TeacherDetails() {
                   </div>
                 </div>
 
-                <h3 style={{ marginTop: 20 }}>Full records</h3>
+                <h3 style={{ marginTop: 20 }}>სრული ჩანაწერები</h3>
 
                 {records.map((scan) => (
                   <div className="record" key={scan.id}>
