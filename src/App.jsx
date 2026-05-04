@@ -19,8 +19,8 @@ function ProtectedRoute({ children }) {
 function NotFound() {
   return (
     <div className="page">
-      <h2>Page not found</h2>
-      <Link to="/">Go to login</Link>
+      <h2>გვერდი ვერ მოიძებნა</h2>
+      <Link to="/">გადადით შესვლაზე</Link>
     </div>
   );
 }
