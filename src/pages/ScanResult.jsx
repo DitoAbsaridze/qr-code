@@ -31,7 +31,7 @@ export default function ScanResult() {
         console.error(error);
         setScanResult({
           success: false,
-          message: "Something went wrong while saving scan.",
+          message: "სკანირების შენახვისას რაღაც შეცდომა მოხდა.",
         });
       } finally {
         setLoading(false);
@@ -47,16 +47,16 @@ export default function ScanResult() {
         {loading && (
           <>
             <div className="success-icon">...</div>
-            <h1>Saving</h1>
-            <p className="subtitle">Please wait.</p>
+            <h1>შენახვა</h1>
+            <p className="subtitle">გთხოვთ დაელოდოთ.</p>
           </>
         )}
 
         {!loading && !teacher && (
           <>
             <div className="success-icon not-allowed-icon">!</div>
-            <h1>Teacher not found</h1>
-            <p className="subtitle">This QR code is not registered.</p>
+            <h1>მასწავლებელი ვერ მოიძებნა</h1>
+            <p className="subtitle">ეს QR კოდი არ არის რეგისტრირებული.</p>
           </>
         )}
 
